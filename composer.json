@@ -1,0 +1,42 @@
+{
+    "name": "mohamedreda/likeable",
+    "description": "Add likeable/liker definition to Models",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Reda",
+            "email": "mohamed.reda.bot@gmail.com"
+        },
+        {
+            "name": "Daniel Farag",
+            "email": "daniefarag146@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MohamedReda\\Likeable\\":"src/",
+            "App\\":"app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MohamedReda\\Likeable\\":"src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "MohamedReda\\Likeable\\LikeableServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
